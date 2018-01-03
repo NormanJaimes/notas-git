@@ -17,3 +17,5 @@ call y apply tienen como primer argumento el nuevo contexto de la función, el c
 
 apply tiene una ventaja con respecto a call, que es permitir pasar los argumentos de forma dinámica. En el caso de call, cada parámetro debe ser pasado dentro del método, como un parámetro más; en el caso de apply, solo basta agregar un elemento en el segundo parámetro, que es un arreglo.
 ```
+
+Ésta Línea fue creada en la rama master.
