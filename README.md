@@ -19,3 +19,6 @@ apply tiene una ventaja con respecto a call, que es permitir pasar los argumento
 ```
 
 Ésta Línea fue creada en la rama master.
+
+## Varios repositorios
+Podemos configurar un mismo proyecto para sincronizar cambios con varios repositorios remotos.
