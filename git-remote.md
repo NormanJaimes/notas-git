@@ -14,3 +14,8 @@ Con éste comando vinculamos nuestro repositorio local con Github
 
 ## Varios repositorios
 Podemos configurar un mismo proyecto para sincronizar cambios con varios repositorios remotos.
+
+### Cambio para comprobar el editor VIM en Windows
+```
+git config --global core.editor "vim"
+```
