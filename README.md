@@ -26,7 +26,12 @@ Usando git Bash seguimos los siguientes pasos:
 2. Ejecutamos el comando `ssh-keygen -t rsa -C "mi-correo@ejemplo.com"`.
 El correo debe ser el mismo con el que nos registramos en Github para evitar posibles problemas.
 Cundo nos pida la ruta escribimos `/c/llaves-ssh/github_rsa`.
-.3 Iniciamos ssh-agent en background ejecutando el comando `eval "$(ssh-agent -s)"`.
+3. Iniciamos ssh-agent en background ejecutando el comando `eval "$(ssh-agent -s)"`.
 4. Agregamos la llave shh generada a ssh-agent ejecutando el comando `ssh-add /c/llaves-ssh/github_rsa`
 
-5. Desde ahora podemos hacer pull y push sin que github nos esté pidiendo nombre de usuario y contraseña.
+5. Usar el comando `cat /c/llaves-ssh/github_rsa.pub`
+Con éste comando emos el contenido del archivo, copiamos todo el texto que nos muestra.
+
+6. Ir a las configuraciones de nuestro perfil de Github y agregar una nueva llave SSH con el contenido que hemos copiado de github_rsa.pub
+
+Desde ahora podemos hacer pull y push sin que github nos esté pidiendo nombre de usuario y contraseña.
