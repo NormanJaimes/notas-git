@@ -22,6 +22,9 @@ apply tiene una ventaja con respecto a call, que es permitir pasar los argumento
 
 ## Configuración SSH en windows
 Usando git Bash seguimos los siguientes pasos:
+
+`git remote add name_remote url_ssh`
+`git remote add github git@github.com:NormanJaimes/notas-git.git`
 1. Creamos una carpeta llamada `llaves-ssh` en el disco `C` para evitar problemas de rutas.
 2. Ejecutamos el comando `ssh-keygen -t rsa -C "mi-correo@ejemplo.com"`.
 El correo debe ser el mismo con el que nos registramos en Github para evitar posibles problemas.
