@@ -20,3 +20,13 @@ apply tiene una ventaja con respecto a call, que es permitir pasar los argumento
 
 Ésta Línea fue creada en la rama master.
 
+## Configuración SSH en windows
+Usando git Bash seguimos los siguientes pasos:
+1. Creamos una carpeta llamada `llaves-ssh` en el disco `C` para evitar problemas de rutas.
+2. Ejecutamos el comando `ssh-keygen -t rsa -C "mi-correo@ejemplo.com"`.
+El correo debe ser el mismo con el que nos registramos en Github para evitar posibles problemas.
+Cundo nos pida la ruta escribimos `/c/llaves-ssh/github_rsa`.
+.3 Iniciamos ssh-agent en background ejecutando el comando `eval "$(ssh-agent -s)"`.
+4. Agregamos la llave shh generada a ssh-agent ejecutando el comando `ssh-add /c/llaves-ssh/github_rsa`
+
+5. Desde ahora podemos hacer pull y push sin que github nos esté pidiendo nombre de usuario y contraseña.
